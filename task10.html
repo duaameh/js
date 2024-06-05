@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decoument</title>
+</head>
+<body>
+    <h2>Membership Benefits:</h2>
+    <div id="benefits"></div>
+
+    <script>
+        let membershipType = prompt('Enter your membership type (Basic, Silver, Gold):');
+        let benefits;
+        if (membershipType.toLowerCase() === 'basic') {
+            benefits = "Access to basic content";
+        } else if (membershipType.toLowerCase() === 'silver') {
+            benefits = "Access to silver content";
+        } else if (membershipType.toLowerCase() === 'gold') {
+            benefits = "Access to all content";
+        } else {
+            benefits = "Invalid membership type entered";
+        }
+
+       
+        alert(benefits);
+
+    </script>
+</body>
+</html>

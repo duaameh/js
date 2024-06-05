@@ -6,14 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <p>your result is</p>
-    <p id="result"></p>
     <script>
-        let x= parseInt(prompt('Enter your score'));
+        let x= parseFloat(prompt('Enter Number'));
+        let y= parseFloat(prompt('Enter Number'));
+
          let msg;
-        if(x<50){msg="Fail" }
-        else{msg="Pass"}
-        document.getElementById('result').innerText=msg;
+        if (x=>y)
+        {
+            msg=x;
+        }else (x<y)
+        {
+            msg=y;
+        }
+        alert(msg);
     </script>
 </body>
 </html>

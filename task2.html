@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>decoument</title>
 </head>
 <body>
-    <script src="task2.js"></script>
+    <h2>Age Verification Result:</h2>
+    <div id="result"></div>
+
+    <script>
+        let x = parseInt(prompt('Enter your age'));
+        let msg;
+        if (x < 18) {
+            msg = "You can't watch movies";
+        } else {
+            msg = "You can watch movies";
+        }
+
+        // Display the message on the HTML page
+        document.getElementById('result').innerText = msg;
+    </script>
 </body>
 </html>

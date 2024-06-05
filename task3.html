@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="task3.js"></script>
+    <p>The temperature  is</p>
+    <p id="result"></p>
+
+    <script>
+                let x=parseInt(prompt('Enter temperature '));
+                let msg;
+                if(x<20)
+                {
+                     msg="Cold";
+                }
+               else if(x>20 && x<30)
+               { msg="warm ";
+
+               }
+               else
+              {msg="hot";
+
+             30 } 
+               document.getElementById('result').innerText = msg;
+    </script>
 </body>
 </html>
