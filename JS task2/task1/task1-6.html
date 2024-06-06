@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        let temp=parseFloat(prompt("give me a temperature in Celsius  "));
+        var msg;
+        if(temp<=0 && temp>20) msg="cold";
+        else if(temp<=20 && temp>40) msg="normal";
+        else msg="above boiling";
+        let tempFer= temp*1.8+32;
+        document.getElementById('result').innerText=`the temperature in Fahrenheit is ${tempFer} and the weather is ${msg}`;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        let userType = prompt("who are you T||s?").toLowerCase();
+        let numBooks = parseInt(prompt("Enter the number of books you want to borrow:"));
+
+        let result;
+        if (userType === "student") {
+            if (numBooks <= 3) {
+                result = "Loan approved.";
+            } else {
+                result = "Sory! Students can borrow up to 3 books.";
+            }
+        } else if (userType === "teacher") {
+            if (numBooks <= 5) {
+                result = "Loan approved.";
+            } else {
+                result = "Sorry! Teachers can borrow up to 5 books.";
+            }
+        } else {
+            result = "  OOPS! something errore";
+        }
+
+        // Display the result
+        document.getElementById('result').innerText = result;
+    </script>
+</body>
+</html>

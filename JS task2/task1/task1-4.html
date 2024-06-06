@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let a=parseFloat(prompt("Enter first number"));       
+        let b=parseFloat(prompt("Enter seconde number"));
+        let c=parseFloat(prompt("Enter thired number"));
+        let largest;
+        if(a>b && a>c)
+        {
+            largest=a;
+        }
+        else if(a<b && b>c)
+        {
+            largest=b;
+        }
+        else
+        {
+            largest=c
+        }
+        let cases;
+       if(largest<0)
+       {
+        if(largest==0){ cases="Zero" }
+        else{cases="negative"}
+       }
+       else
+       cases="positive";
+       document.getElementById('result').innerText=`the largest number is ${largest} ,this number is ${cases}`;
+        </script>
+</body>
+</html>

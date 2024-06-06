@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperature = parseFloat(prompt("Enter a temperature in C: "));
+
+        let message;
+        if (temperature < 0) {
+        message = "very cold";
+        } else if (temperature >= 0 && temperature <= 15) {
+        message = "cold";
+        } else if (temperature > 15 && temperature <= 25) {
+        message = "warm";
+        } else {
+        message = "hot";
+        }
+
+document.write("The temperature is " + message);
+    </script>
+</body>
+</html>

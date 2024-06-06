@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        let age = parseInt(prompt("Enter your age:"));
+        let nationality = prompt("Enter your nationality:").toLowerCase();
+        let result;
+        if (age >= 18) {
+            if (nationality === "american") {
+                result = "You are eligible to vote.";
+            } else {
+                result = "Sorry you cant beause ,you are not an American citizen.";
+            }
+        } else {
+            result = "Sorry you cant beause , because you are under 18 years old.";
+        }
+
+        // Display the result
+        document.getElementById('result').innerText = result;
+    </script>
+</body>
+</html>

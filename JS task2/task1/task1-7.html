@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+    let amount=parseFloat(prompt("Enter total amount of their shopping cart ")); 
+    if(amount>100 && amount<200) //150 150>100 t 150<200 t || 250>100 t 250<200 f
+    {
+        amount=amount-(amount*.1);
+    }
+    else if(amount>=200 && amount>100)//  150>200 f || 250>200 t 250>100 t
+    {
+        amount=amount-(amount*.2);
+    } 
+    else;
+    document.getElementById('result').innerText=`TThe amount became ${amount}`;
+
+    </script>
+</body>
+</html>

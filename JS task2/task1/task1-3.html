@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="result"></h3>
+    <script>
+        let mark=parseInt(prompt("Enter your MARK"));
+        const threshold=55;
+        let bonus ;
+
+        if(mark >= threshold)
+         {  bonus =confirm("completed any bonus assignments ?");
+            if(bonus ) mark+=5;
+        }
+        let grade;
+            if (mark >= 90 ) {
+                grade = 'A';
+            } else if (mark >= 80) {
+                grade = 'B';
+            } else if (mark >= 70) {
+                grade = 'C';
+            } else if (mark >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+            document.getElementById('result').innerText=`your mark become ${mark} and the Grade is ${grade}`;
+
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let roomType = prompt("Enter the type of room you want  (Single, Double, Suite): ").toLowerCase();
+    let nights = parseInt(prompt("Enter the number of nights you want to stay: "));
+
+    let singlePrice = 50;
+    let doublePrice = 100;
+    let suitePrice = 300;
+
+    let totalCost;
+
+    if (roomType === "single") {
+    totalCost = singlePrice * nights;
+    } else if (roomType === "double") {
+    totalCost = doublePrice * nights;
+    } else if (roomType === "suite") {
+    totalCost = suitePrice * nights;
+    } else ;
+    document.write(`The total cost for your stay is $${totalCost}.`);
+    
+    </script>
+</body>
+</html>

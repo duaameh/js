@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let order = prompt("Enter your order (Pizza, Pasta, Salad): ");
+    let quantity = parseInt(prompt(`How many  ${ order}   would you like to order? `));
+
+    let price;
+    if (order.toLowerCase() === "pizza") {
+    price = 4;
+    } else if (order.toLowerCase() === "pasta") {
+    price = 3;
+    } else if (order.toLowerCase() === "salad") {
+    price = 3;
+    } else {
+    document.write("OOPS! something errore");
+    }
+
+    let totalPrice = price * quantity;
+    if (quantity > 1) {
+    totalPrice+=totalPrice*0.25;
+    }
+
+    document.write(`The total price of your order is ${ totalPrice }.`);
+        </script>
+</body>
+</html>

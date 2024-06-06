@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let grade1 = parseFloat(prompt("Enter your grade for subject 1: "));
+    let grade2 = parseFloat(prompt("Enter your grade for subject 2: "));
+    let grade3 = parseFloat(prompt("Enter your grade for subject 3: "));
+
+    let avg = (grade1 + grade2 + grade3) / 3;
+    let msg;
+    if (avg >= 60) {
+    msg="You passed!";
+    } else {
+    msg="You failed.";
+    }
+    document.write(`Your are ${msg} & average grade is: ${avg}` );
+
+    
+        </script>
+</body>
+</html>

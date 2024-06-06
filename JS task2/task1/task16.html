@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let username = prompt("Enter your username: ");
+        let password = prompt("Enter your password: ");
+
+        let testUsername = "Duaa";
+        let testPassword = "1722001";
+
+        if (username === testUsername) 
+        {
+         if (password === testPassword) 
+         {
+           document.write(`Login successful! `);
+        } 
+        else {
+            document.write("Incorrect password. Please try again.");
+            }
+        } 
+
+    else 
+    {
+    document.write("Invalid username. Please try again.");
+    }
+    </script>
+</body>
+</html>

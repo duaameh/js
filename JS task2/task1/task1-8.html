@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        let password = prompt("Enter your password");
+        let msg;
+
+        function hasSpecialChar(str) {
+            const specialChars = /[@#$%&]/;
+            return specialChars.test(str);
+        }
+
+        function hasNumber(str) {
+            const numbers = /\d/;
+            return numbers.test(str);
+        }
+
+        if (password.length >= 10 && hasSpecialChar(password) && hasNumber(password)) {
+            msg = "Strong";
+        } else if (password.length >= 8 && (hasSpecialChar(password) || hasNumber(password))) {
+            msg = "Moderate";
+        } else {
+            msg = "Weak";
+        }
+
+        document.getElementById('result').innerText = `Your password is ${msg}`;
+    </script>
+</body>
+</html>

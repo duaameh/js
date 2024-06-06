@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let age = parseInt(prompt("Enter your age: "));
+  let movieType = prompt("Enter the type of movie (Regular, 3D): ");
+
+  let ticketPrice;
+  if (age <= 12) {
+    if (movieType === "regular") {
+      ticketPrice = 5;
+    } else if (movieType === "3d") {
+      ticketPrice = 7;
+    } else {
+      document.write("OOPS! something errore");
+    }
+  } else {
+    if (movieType.toLowerCase() === "regular") {
+      ticketPrice = 7;
+    } else if (movieType.toLowerCase() === "3d") {
+      ticketPrice = 9;
+    } else {
+      document.write("OOPS! something errore");
+    }
+  }
+
+  if (ticketPrice) {
+    document.write("The ticket price is $" + ticketPrice + ".");
+  }
+  </script>
+</body>
+</html>
