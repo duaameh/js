@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f1eaea;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-form {
+        background-color: #d48fb7;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .login-form input[type='text'],
+      .login-form input[type='password'] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      .login-form input[type='submit'] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #040505;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    
+     
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-form" id="loginFormContainer">
+      <h2>Task</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        
+        <br />
+        <br />
+
+        <label>Your programming languages:</label>
+        <br />
+        <input type="checkbox" name="programming-language" value="html" /> HTML
+        <br />
+        <input type="checkbox" name="programming-language" value="css" /> CSS
+        <br />
+        <input type="checkbox" name="programming-language" value="js" />
+        JavaScript
+        <br />
+        <input type="checkbox" name="programming-language" value="C" /> C#
+
+        <br />
+        <input onclick="storFormData(event)" type="submit" value="send" />
+      </form>
+    </div>
+
+    <div id="cardContainer"></div>
+    <script src="task1.js"></script>
+  </body>
+</html>

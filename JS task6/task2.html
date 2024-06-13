@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #d4d0d0;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #070606;
+      }
+     
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container form input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #3c698d;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .form-container form input[type='submit'] {
+        background-color: #3c698d;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        background: #fff;
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      .card p {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container" id="registrationFormContainer">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+          <input type="text" id="firstName" placeholder="Enter First Name" required />
+          <input type="text" id="lastName" placeholder="Enter Last Name" required />
+          <input type="email" id="email" placeholder="Enter Email" required />
+          <input type="password"id="regPassword" placeholder=" Enter Password" required />
+          <input onclick="storeRegistrationData(event)" type="submit" value="Register" />
+        </form>
+      </div>
+
+      <div class="form-container" id="loginFormContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <input onclick="authUser(event)" type="submit" value="Login" />
+        </form>
+      </div>
+
+      <div id="cardContainer"></div>
+    </div>
+
+    <script src="task2.js"></script>
+  </body>
+</html>
